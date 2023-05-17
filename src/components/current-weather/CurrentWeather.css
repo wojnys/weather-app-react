@@ -1,0 +1,93 @@
+.cityImage {
+    width:150px;
+    height:160px;
+    border-radius:50%;
+}
+.current-weather-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+div.widget
+{
+  position: relative;
+  width: 355px;
+  height: 125px;
+  margin: 150px auto;
+  background-color: #fcfdfd;
+  border-radius: 9px;
+  padding: 25px;
+  padding-right: 30px;
+  box-shadow: 0px 31px 35px -26px #080c21;
+}
+
+div.left-panel
+{
+ float: left;
+ float: inline-start;
+  width:50%;
+  height: 100%;
+}
+
+div.date
+{
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.5);
+}
+
+div.city
+{
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+  color: rgba(0,0,0,0.7);
+}
+
+div.temp
+{
+  font-size: 40px;
+  color: rgba(0,0,0,0.9);
+  font-weight: 100;
+  text-align: center;
+  display: flex;
+}
+div.temp span {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    line-height: 80px;
+}
+.weather-icon {
+    width:80px;
+}
+div.temp-div {
+
+}
+
+
+div.weather-icon-div {
+
+}
+div.panel
+{
+  display: inline-block;
+}
+
+.widget .right-panel
+{
+  /* position: absolute;
+  float: center;
+  top: 0;
+  margin-top: 35px;
+  padding-left: 10px; */
+  float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width:50%;
+}
+

@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  overflow: hidden;
+  background: #009688;;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
