@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './search.css'
 import { AsyncPaginate } from 'react-select-async-paginate'
 import { options, apiURL } from '../api/api'
-import axios from 'axios'
+
 
 export const Search = ({onSearchChange}) => {
 

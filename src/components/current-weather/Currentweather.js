@@ -33,6 +33,10 @@ export const CurrentWeather = ({data}) => {
 
     fetchBuildingImage(cityName);
 
+    const date = new Date();
+    const days = ["Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday","Sunday"]
+    const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Nov","Dec"];
+
   return (
 <div className='current-weather-container'>
 
@@ -40,7 +44,7 @@ export const CurrentWeather = ({data}) => {
             
     <div className="left-panel panel">
         <div className="date">
-            Monday, 20 Aug 2018
+            { days[date.getDay() - 1] + ", " + date.getDate() + " " + months[date.getMonth()] +  " " + date.getFullYear() }
         </div>
         <div className="city">
           <div> { data.city} </div>
@@ -49,7 +53,7 @@ export const CurrentWeather = ({data}) => {
           <div className='weather-icon-div'>
             <img className='weather-icon' src ={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} />
           </div>
-          <div className='temp-div'> { Math.floor(data.main.temp) } <span>&#8451;</span> </div> 
+          <div className='temp-div'> { Math.floor(data.main.temp) + "°" } </div> 
         </div>
     </div>
     <div className="right-panel panel">

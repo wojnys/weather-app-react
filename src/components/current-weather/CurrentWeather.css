@@ -48,28 +48,22 @@ div.city
 
 div.temp
 {
+  height:80px;
   font-size: 40px;
   color: rgba(0,0,0,0.9);
   font-weight: 100;
   text-align: center;
   display: flex;
+  align-items: center;
 }
 div.temp span {
     text-align: center;
     margin: 0;
     font-size: 30px;
-    line-height: 80px;
+    line-height: 60px;
 }
 .weather-icon {
     width:80px;
-}
-div.temp-div {
-
-}
-
-
-div.weather-icon-div {
-
 }
 div.panel
 {
@@ -78,11 +72,6 @@ div.panel
 
 .widget .right-panel
 {
-  /* position: absolute;
-  float: center;
-  top: 0;
-  margin-top: 35px;
-  padding-left: 10px; */
   float: right;
   display: flex;
   justify-content: flex-end;
