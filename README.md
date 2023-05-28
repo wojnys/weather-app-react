@@ -1,8 +1,8 @@
 #Weather react app
-- In react I created weather app
-- You can from dropbox choose city
-- Then will display current weather information + photo of the most famous building from picked town
-- You will also see the forecast form followings 5 days
+- I created a weather app in react
+- You can select a city from the dropbox
+- Then you will see the current weather information + photo of the most famous building from the selected city
+- It will also show the forecast for the next 5 days
 
 ![Screenshot 2023-05-28 at 11 34 28](https://github.com/wojnys/weather-app-react/assets/77916807/c2a7b6ff-4349-4ea9-a057-0c9c789b96c5)
 
