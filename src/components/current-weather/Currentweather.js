@@ -14,7 +14,6 @@ export const CurrentWeather = ({data}) => {
     
         // Extract the image URL from the response data
       const imageUrl = response.data.results[0].urls.regular;
-      console.log(imageUrl + "  ee")
 
         if(imageUrl != null) {
             // Set the image source dynamically
@@ -34,7 +33,7 @@ export const CurrentWeather = ({data}) => {
     fetchBuildingImage(cityName);
 
     const date = new Date();
-    const days = ["Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday","Sunday"]
+    const days = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday","Friday","Saturday"]
     const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Nov","Dec"];
 
   return (
@@ -44,14 +43,14 @@ export const CurrentWeather = ({data}) => {
             
     <div className="left-panel panel">
         <div className="date">
-            { days[date.getDay() - 1] + ", " + date.getDate() + " " + months[date.getMonth()] +  " " + date.getFullYear() }
+            { days[date.getDay()] + ", " + date.getDate() + " " + months[date.getMonth()] +  " " + date.getFullYear() }
         </div>
         <div className="city">
           <div> { data.city} </div>
         </div>
         <div className="temp">
           <div className='weather-icon-div'>
-            <img className='weather-icon' src ={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} />
+            <img className='weather-icon' src ={`icons/${data.weather[0].icon}.png`} />
           </div>
           <div className='temp-div'> { Math.floor(data.main.temp) + "°" } </div> 
         </div>

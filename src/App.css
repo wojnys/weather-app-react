@@ -1,4 +1,6 @@
 
 .container {
+  height: 100vh; /* Set the container's height to 100% of the viewport height */
+  overflow: auto; /* Enable scrolling within the container */
   width:100%;
 }
